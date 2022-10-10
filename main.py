@@ -18,7 +18,7 @@ def get(url, driver):
             try:
                 i += 1
                 header = info.find_element(
-                    By.XPATH, "//div[@data-header-feature]")
+                    By.XPATH, "div[@data-header-feature]")
                 #content = info.find_element(By.XPATH, "//div[@data-content-feature]")
                 url = header.find_element(
                     By.TAG_NAME, "a").get_attribute('href')
